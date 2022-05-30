@@ -1,0 +1,30 @@
+.divClass
+{
+
+}
+
+
+#thirdDiv
+{
+    width: 600px;
+    height: 500px;
+    background-color: darkslategray;
+    padding: 50px;
+    border: 5px solid seagreen;
+}
+
+#spanId
+{
+font-size: 18px;
+margin: 50px;
+}
+
+h1
+{
+    color: tomato;
+}
+
+img
+{
+    width: 400px;
+}
