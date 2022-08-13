@@ -1,0 +1,2 @@
+* Arrays
+¿Recordas que te conté anteriormente que una variable era como una caja donde podias guardar cualquier cosa?. Bueno, un array sería una habitación donde guardamos todas las cajas que queramos, donde las tenemos ordenadas y cuando queremos podemos entrar a ver, a cambiar o a quitar lo que tenga cualquiera de esas cajas.
