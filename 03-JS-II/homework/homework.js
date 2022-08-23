@@ -5,22 +5,14 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x > y) {
-    return x
-  } else {
-    return y
-  }
+  return x > y ? x : y
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad >= 18) {
-    return 'Allowed'
-  } else {
-    return 'Not allowed'
-  }
+  return edad >= 18 ? 'Allowed' : 'Not allowed'
 }
   
 function conection(status) {
@@ -29,13 +21,9 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if (status === 1) {
-    return 'Online'
-  } else if (status === 2) {
-    return 'Away'
-  } else {
-    return 'Offline'
-  }
+  if (status === 1) return 'Online';
+  else if (status === 2) return 'Away';
+  else return 'Offline'
 }
 
 function saludo(idioma) {
@@ -81,22 +69,14 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero === 10 || numero === 5) {
-    return true
-} else {
-  return false
-}
+  return numero === 10 || numero === 5 
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero < 50 && numero > 20) {
-    return true
-  } else {
-    return false
-  }
+  return numero > 20 && numero < 50
 }
 
 function esEntero(numero) {
@@ -155,7 +135,7 @@ function esPrimo(numero) {
     return false }
   if (numero === 2) {
     return true }
-  for (var i = 2; i < numero ; i++) {
+  for (let i = 2; i < numero ; i++) {
     if (numero % i === 0) {
       return false
     }
@@ -167,11 +147,7 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if (valor === true) {
-    return 'Soy verdadero'
-  } else {
-    return 'Soy falso'
-  }
+  return valor === true ? 'Soy verdadero' : 'Soy falso'; 
 }
 
 function tablaDelSeis(){
@@ -188,11 +164,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero > 99 && numero < 1000) {
-    return true
-  } else {
-    return false
-  }
+  return numero > 99 && numero < 1000 ? true : false;
 }
 
 function doWhile(numero) {
